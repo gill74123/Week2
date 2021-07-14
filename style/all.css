@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/*變數*/
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mb-1_5 {
+  margin-bottom: 12px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-2_5 {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-3_5 {
+  margin-bottom: 28px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+.mb-6 {
+  margin-bottom: 48px;
+}
+
+.mb-7 {
+  margin-bottom: 56px;
+}
+
+.mb-8 {
+  margin-bottom: 64px;
+}
+
+.mb-8_5 {
+  margin-bottom: 68px;
+}
+
+.mb-9 {
+  margin-bottom: 144px;
+}
+
+.mr-2 {
+  margin-right: 16px;
+}
+
+.mr-3 {
+  margin-right: 24px;
+}
+
+.pb-3 {
+  padding-bottom: 24px;
+}
+
+.pb-8 {
+  padding-bottom: 64px;
+}
+
+.pb-20 {
+  padding-bottom: 160px;
+}
+
+.pt-7 {
+  padding-top: 56px;
+}
+
+.pt-8 {
+  padding-top: 64px;
+}
+
+/*容器共用屬性*/
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 958px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #707070;
+  color: #fff;
+  font-weight: 700;
+}
+
+.header h1 {
+  font-size: 80px;
+  line-height: 1.325;
+  font-weight: 900;
+}
+
+.header p {
+  font-size: 24px;
+}
+
+.header .media {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .media img:hover {
+  width: 105%;
+  height: 105%;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 1.3125;
+}
+
+.about {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.about .about-self {
+  border-bottom: 1px solid #000;
+  font-weight: 700;
+}
+
+.about .experience {
+  font-weight: 700;
+  /*以尾元素的方式
+        .icon::after{
+            content: '';
+            width: 22px;
+            height: 22px;
+            background: #891818;
+            display: inline-block;
+            border-radius: 50%;
+        }*/
+}
+
+.about .experience li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .experience .icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 50%;
+}
+
+.brand {
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.brand .slogan {
+  font-size: 24px;
+  line-height: 1.75;
+}
+
+.brand p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.brand ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works {
+  text-align: center;
+}
+
+.works .works-info {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.works .works-photo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer {
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.footer li, .footer a {
+  font-size: 24px;
+  color: #fff;
+}
+
+.footer a:hover {
+  color: pink;
+}
+/*# sourceMappingURL=all.css.map */

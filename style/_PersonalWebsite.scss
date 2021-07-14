@@ -1,0 +1,183 @@
+/*變數*/
+.d-flex{
+    display: flex;
+}
+.mb-1_5{
+    margin-bottom: $mb-1_5;
+}
+.mb-2{
+    margin-bottom: $mb-2;
+}
+.mb-2_5{
+    margin-bottom: $mb-2_5;
+}
+.mb-3{
+    margin-bottom: $mb-3;
+}
+.mb-3_5{
+    margin-bottom: $mb-3_5;
+}
+.mb-4{
+    margin-bottom: $mb-4;
+}
+.mb-5{
+    margin-bottom: $mb-5;
+}
+.mb-6{
+    margin-bottom: $mb-6;
+}
+.mb-7{
+    margin-bottom: $mb-7;
+}
+.mb-8{
+    margin-bottom: $mb-8;
+}
+.mb-8_5{
+    margin-bottom: $mb-8_5;
+}
+.mb-9{
+    margin-bottom: $mb-9;
+}
+.mr-2{
+    margin-right: $mr-2;
+}
+.mr-3{
+    margin-right: $mr-3;
+}
+.pb-3{
+    padding-bottom: $pb-3;
+}
+.pb-8{
+    padding-bottom: $pb-8;
+}
+.pb-20{
+    padding-bottom: $pb-20;
+}
+.pt-7{
+    padding-top: $pt-7;
+}
+.pt-8{
+    padding-top: $pt-8;
+}
+
+/*容器共用屬性*/
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: $fontweight-medium;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    justify-content: center;
+    align-items: center;
+    height: 958px;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #707070;
+    color: $text-white;
+    font-weight: $fontweight-bold;
+    h1{
+        font-size: 80px;
+        line-height: 1.325;
+        font-weight: $fontweight-black;
+    }
+    p{
+        font-size: $font-M;
+    }
+    .media{
+        justify-content: space-between;
+        img:hover{
+            width: 105%;
+            height: 105%;
+        }
+    }
+}
+
+.title{
+    font-size: $font-L;
+    line-height: 1.3125;
+}
+
+.about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-M;
+    line-height: 1.75;
+    text-align: center;
+    .about-self {
+        border-bottom: 1px solid $text-black;
+        font-weight: $fontweight-bold;
+    }
+    .experience{
+        font-weight: $fontweight-bold;
+        li{
+            justify-content: center;
+            align-items: center;
+        }
+        .icon{
+           display: inline-block;
+           width: 22px;
+           height: 22px;
+           background: #891818;
+           border-radius: 50%;
+        }
+        /*以尾元素的方式
+        .icon::after{
+            content: '';
+            width: 22px;
+            height: 22px;
+            background: #891818;
+            display: inline-block;
+            border-radius: 50%;
+        }*/
+    }
+}
+
+.brand{
+    background: $text-black;
+    text-align: center;
+    color: $text-white;
+    .slogan{
+        font-size: $font-M;
+        line-height: 1.75;
+    }
+    p{
+        font-size: $font-S;
+        line-height: 1.5;
+    }
+    ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.works{
+    text-align: center;
+    .works-info{
+        font-size: $font-S;
+        line-height: 1.5;
+    }
+    .works-photo{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.footer{
+    background: $text-black;
+    text-align: center;
+    color: $text-white;
+    li, a{
+        font-size: $font-M;
+        color: $text-white;
+    }
+    a:hover{
+        color: pink;
+    }
+}
