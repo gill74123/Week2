@@ -67,7 +67,7 @@ img {
   display: block;
 }
 
-/*變數*/
+/*功能性class*/
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +185,11 @@ body {
   font-weight: 900;
 }
 
+.header span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .header p {
   font-size: 24px;
 }
@@ -196,8 +201,8 @@ body {
 }
 
 .header .media img:hover {
-  width: 105%;
-  height: 105%;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .title {
@@ -269,7 +274,6 @@ body {
 
 .brand p {
   font-size: 20px;
-  line-height: 1.5;
 }
 
 .brand ul {
@@ -286,7 +290,6 @@ body {
 
 .works .works-info {
   font-size: 20px;
-  line-height: 1.5;
 }
 
 .works .works-photo {
